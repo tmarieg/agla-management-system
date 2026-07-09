@@ -1,9 +1,10 @@
 import DashboardCard from "@/components/DashboardCard";
 import { dashboardMetrics } from "@/data/dashboardMetrics";
+import AppShell from "@/components/layout/AppShell";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white p-8">
+    <AppShell>
       <section className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold mb-2">AGEMS Executive Dashboard</h1>
         <p className="text-slate-300 mb-8">
@@ -32,6 +33,6 @@ export default function Home() {
           </ul>
         </section>
       </section>
-    </main>
+    </AppShell>
   );
 }

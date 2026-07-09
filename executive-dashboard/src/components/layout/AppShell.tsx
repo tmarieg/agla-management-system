@@ -3,6 +3,7 @@ type AppShellProps = {
 };
 
 import { navigation } from "@/data/navigation";
+import TopBar from "@/components/layout/TopBar";
 
 export default function AppShell({ children }: AppShellProps) {
   return (
@@ -29,7 +30,10 @@ export default function AppShell({ children }: AppShellProps) {
 </nav>
         </aside>
 
-        <main className="flex-1 p-8">{children}</main>
+        <div className="flex flex-1 flex-col">
+          <TopBar />
+          <main className="flex-1 p-8">{children}</main>
+        </div>
       </div>
     </div>
   );
